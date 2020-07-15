@@ -32,6 +32,7 @@ ant build ............... test and build jar
 
         <mkdir dir="libs" />
         <get src="https://repo1.maven.org/maven2/junit/junit/4.13/junit-4.13.jar" dest="libs" />
+        <get src="https://jcenter.bintray.com//org/codehaus/groovy/groovy-all/2.4.15/groovy-all-2.4.15.jar" dest="libs" />
 
     </target>
 
@@ -47,13 +48,6 @@ ant build ............... test and build jar
             target="1.8"
             includeantruntime="false"
             >
-
-            <!--
-            <classpath>
-                <fileset dir="lib" />
-            </classpath>
-            -->
-
         </javac>
 
     </target>
@@ -118,6 +112,22 @@ ant build ............... test and build jar
             </fileset>
             <report format="noframes" todir="target/junit/report"/>
         </junitreport>
+
+        <echo>
+            open target/junit/report/junit-noframes.html
+        </echo>
+
+        <taskdef name="groovy" classname="org.codehaus.groovy.ant.Groovy"
+                 classpath="libs/groovy-all-2.4.15.jar" />
+
+        <groovy>
+            try {
+            java.awt.Desktop.getDesktop().open(
+            new File( "target/junit/report/junit-noframes.html" ) );
+            }
+            catch( Exception ex ) {
+            }
+        </groovy>
 
     </target>
 

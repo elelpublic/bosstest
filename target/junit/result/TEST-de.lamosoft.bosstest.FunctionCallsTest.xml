@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="1" hostname="matilda.local" name="de.lamosoft.bosstest.FunctionCallsTest" skipped="0" tests="1" time="0.026" timestamp="2020-07-15T19:41:17">
+<testsuite errors="0" failures="1" hostname="matilda.local" name="de.lamosoft.bosstest.FunctionCallsTest" skipped="0" tests="1" time="0.02" timestamp="2020-07-15T20:14:14">
   <properties>
     <property name="ant.project.invoked-targets" value="clean,test" />
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
@@ -67,7 +67,7 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
     <property name="sun.cpu.isalist" value="" />
   </properties>
-  <testcase classname="de.lamosoft.bosstest.FunctionCallsTest" name="testSomeSimpleCalls" time="0.004">
+  <testcase classname="de.lamosoft.bosstest.FunctionCallsTest" name="testSomeSimpleCalls" time="0.003">
     <failure message="First test fails" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: First test fails
 	at de.lamosoft.bosstest.FunctionCallsTest.testSomeSimpleCalls(FunctionCallsTest.java:14)
 </failure>
