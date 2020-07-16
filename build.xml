@@ -92,6 +92,9 @@ ant build ............... test and build jar
             <classpath>
                 <pathelement path="target/main" />
                 <pathelement path="target/test" />
+                <fileset dir="libs">
+                    <include name="*.jar"/>
+                </fileset>
             </classpath>
 
             <formatter type="xml" />
