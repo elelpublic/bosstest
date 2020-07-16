@@ -1,3 +1,6 @@
+# created artifacts
+target/
+
 # Compiled class file
 *.class
 
